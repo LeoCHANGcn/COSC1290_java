@@ -267,7 +267,7 @@ public class Ozlympic {
 		fakeClear();
 		System.out.println("Final results of all games");
 		System.out.println("\n*****\nWant to back to main menu?(y or n)");
-		String s=input.next();
+		//String s=input.next();
 		while(!input.next().equals("y"))
 		{
 			System.out.println("\n*****\nWant to back to main menu?(y or n)");
@@ -284,7 +284,7 @@ public class Ozlympic {
 			System.out.println("Total points: "+athleteData[i].getTotalPoints());
 		}
 		System.out.println("\n*****\nWant to back to main menu?(y or n)");
-		String s=input.next();
+		//String s=input.next();
 		while(!input.next().equals("y"))
 		{
 			System.out.println("\n*****\nWant to back to main menu?(y or n)");
