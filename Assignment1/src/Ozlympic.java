@@ -50,6 +50,7 @@ public class Ozlympic {
 		//Try to clear the console in a simple way
 		/*for(int i=0;i<30;++i)
 			System.out.println("");*/
+		//Reference:https://www.quora.com/How-do-I-clear-console-screen-CMD-screen-in-Java-Is-there-any-function-in-Java-like-clrscr-and-system-cls-in-C
 		System.out.print("\033[H\033[2J"); 
 	}
 	
