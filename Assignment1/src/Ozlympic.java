@@ -48,8 +48,9 @@ public class Ozlympic {
 	public static void fakeClear()
 	{
 		//Try to clear the console in a simple way
-		for(int i=0;i<30;++i)
-			System.out.println("");
+		/*for(int i=0;i<30;++i)
+			System.out.println("");*/
+		System.out.print("\033[H\033[2J"); 
 	}
 	
 	public static void iniAthlete()
