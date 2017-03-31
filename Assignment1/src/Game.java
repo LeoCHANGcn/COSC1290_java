@@ -14,7 +14,7 @@ public class Game {
 		this.setType(type);
 	}
 	
-	//All the get and set methods
+	//Getters and Setters
 	public String getType() {
 		return type;
 	}
