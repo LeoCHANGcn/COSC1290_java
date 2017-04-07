@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class SelectType {
+	
 	private Scanner scanner;
 	private int input;
 	private String gameType;
