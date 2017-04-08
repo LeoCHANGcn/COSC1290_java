@@ -64,6 +64,8 @@ public class Ozlympic {
 			//athleteData[i].showPerson();
 		}
 		
+		
+		
 	}
 	
 	public static void iniReferee()
