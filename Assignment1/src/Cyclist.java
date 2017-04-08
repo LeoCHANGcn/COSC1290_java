@@ -1,4 +1,8 @@
 import java.util.Random;
+/**
+ * @author Siqi Yang s3583574
+ *
+ */
 public class Cyclist extends Althlete {
 	public Cyclist(int ID, String name, int age, String state)
 	{

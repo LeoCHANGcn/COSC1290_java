@@ -1,4 +1,8 @@
 
+/**
+ * @author Shichao Zhang s3637077
+ *
+ */
 public class Game {
 	private String ID;
 	private Officer referee;

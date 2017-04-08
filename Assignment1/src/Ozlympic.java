@@ -3,6 +3,10 @@ import java.util.Random;
 import java.util.Arrays;
 
 
+/**
+ * @author Shichao Zhang s3637077
+ *
+ */
 public class Ozlympic {
 	private static Scanner input;
 	private static int gameSelected;

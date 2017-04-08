@@ -1,4 +1,8 @@
 
+/**
+ * @author Shichao Zhang s3637077
+ *
+ */
 public abstract class Person {
 	private int ID;
 	private String name;

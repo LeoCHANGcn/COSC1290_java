@@ -1,4 +1,8 @@
 
+/**
+ * @author Siqi Yang s3583574
+ *
+ */
 public abstract class Althlete extends Person{
 	
 	private int totalPoints;

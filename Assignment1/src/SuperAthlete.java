@@ -1,4 +1,8 @@
 import java.util.Random;
+/**
+ * @author Siqi Yang s3583574
+ *
+ */
 public class SuperAthlete extends Althlete {
 	private String gameType;
 	public SuperAthlete(int ID, String name, int age, String state, String gameType)

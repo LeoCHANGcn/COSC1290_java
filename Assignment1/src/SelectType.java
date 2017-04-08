@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/**
+ * @author Siqi Yang s3583574
+ *
+ */
 public class SelectType {
 	
 	private Scanner scanner;
