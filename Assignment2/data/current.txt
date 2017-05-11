@@ -1,0 +1,6 @@
+S1,Marry,9,Jenny,23,Swimmer,VIC,198,0,5,0
+S1,Marry,12,Noah,25,SuperAthlete,QLD,141,5,7,1
+S1,Marry,16,Ella,22,SuperAthlete,VIC,143,1,3,3
+S1,Marry,17,Olivia,23,Swimmer,ACT,141,5,10,1
+S1,Marry,20,Jack,17,SuperAthlete,TAS,145,0,0,0
+S1,Marry,21,Amelia,27,Swimmer,VIC,169,0,2,0
