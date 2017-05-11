@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="displayAllResults">
+   <children>
+      <Label text="GAME RESULTS FOR ALL">
+         <font>
+            <Font name="Bitstream Vera Serif Bold" size="26.0" />
+         </font>
+         <VBox.margin>
+            <Insets right="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="label" text="All Game Results!!!                 BY: RMIT COSC1290" />
+      <ComboBox fx:id="selectGame" onAction="#displayAllResults" prefHeight="40.0" prefWidth="700.0" promptText="S01" />
+      <TableView fx:id="fTableView" prefHeight="332.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="fID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="fName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="fAge" prefWidth="75.0" text="Age" />
+            <TableColumn fx:id="fType" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="fState" prefWidth="75.0" text="State" />
+            <TableColumn fx:id="fPoint" prefWidth="59.0" text="Point" />
+            <TableColumn fx:id="fTotalPoint" prefWidth="100.0" text="Total Points" />
+            <TableColumn fx:id="fRank" prefWidth="62.0" text="Rank" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
