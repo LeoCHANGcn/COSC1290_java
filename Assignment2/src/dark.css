@@ -1,0 +1,21 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.background
+{
+	-fx-background-color:rgba(0,0,0,0.8);
+}
+
+.button
+{
+	-fx-font: bold italic 9pt "Arial";
+	-fx-background-color: rgba(0,0,0,0.8);
+	-fx-border-radius:10;
+	-fx-border-color:white;
+	-fx-text-fill:white;
+	-fx-border-width: 5px;
+	-fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+#scene
+{
+	-fx-background-color:rgba(0,0,0,0.5);
+}
