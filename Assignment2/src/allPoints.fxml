@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allPoints">
+   <children>
+      <Label text="ATHLETES INFORMATON">
+         <font>
+            <Font name="Bitstream Vera Serif Bold" size="26.0" />
+         </font>
+         <VBox.margin>
+            <Insets right="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="label" text="All Athletes' information!!!                 BY: RMIT COSC1290" />
+      <TableView fx:id="rTableView" prefHeight="332.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="rID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="rName" prefWidth="91.0" text="Name" />
+            <TableColumn fx:id="rAge" text="Age" />
+            <TableColumn fx:id="rType" prefWidth="84.0" text="Type" />
+            <TableColumn fx:id="rState" prefWidth="101.0" text="State" />
+            <TableColumn fx:id="rTotalPoints" prefWidth="135.0" text="Total Points" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
