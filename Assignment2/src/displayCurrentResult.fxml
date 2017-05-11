@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="displayCurrentResult">
+   <children>
+      <Label text="GAME RESULT">
+         <font>
+            <Font name="Bitstream Vera Serif Bold" size="26.0" />
+         </font>
+         <VBox.margin>
+            <Insets right="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="label" text="referee date " />
+      <TableView fx:id="rTableView" prefHeight="343.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="rID" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="rName" prefWidth="71.0" text="Name" />
+          <TableColumn fx:id="rAge" prefWidth="62.0" text="Age" />
+          <TableColumn fx:id="rType" prefWidth="83.0" text="Type" />
+            <TableColumn fx:id="rState" prefWidth="71.0" text="State" />
+            <TableColumn fx:id="rTime" prefWidth="75.0" text="Time(s)" />
+            <TableColumn fx:id="rCurrentPoints" prefWidth="58.0" text="Points" />
+            <TableColumn fx:id="rTotalPoints" prefWidth="90.0" text="TotalPoints" />
+            <TableColumn fx:id="rRank" prefWidth="115.0" text="Rank" />
+        </columns>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </TableView>
+   </children>
+</VBox>
