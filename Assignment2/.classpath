@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/zsc/Downloads/APP/eclipse/external_plugins/hsqldb-2.4.0/hsqldb/lib/sqltool.jar"/>
 	<classpathentry kind="lib" path="/home/zsc/Downloads/APP/eclipse/external_plugins/junit-4.12.jar"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
