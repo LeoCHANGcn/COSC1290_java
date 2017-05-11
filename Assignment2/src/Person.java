@@ -8,6 +8,8 @@ public abstract class Person {
 	private String name;
 	private int age;
 	private String state;
+	private checkbox cb=new checkbox();
+	private int rank=0;
 	
 	public Person(int id,String name,int age, String state)
 	{
@@ -52,6 +54,22 @@ public abstract class Person {
 	public void showPerson()
 	{
 		System.out.println("ID:"+this.ID+" Name:"+this.name+" Age:"+this.age+" State:"+this.state);
+	}
+	public checkbox getCB()
+	{
+		return this.cb;
+	}
+	public boolean getCBStatus()
+	{
+		return this.cb.isSelected();
+	}
+
+	public int getRank() {
+		return rank;
+	}
+
+	public void setRank(int rank) {
+		this.rank = rank;
 	}
 
 }

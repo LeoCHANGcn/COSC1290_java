@@ -11,6 +11,7 @@ public class Sprinter extends Althlete {
 	
 	public void complete()
 	{
+		//used for runner
 		Random random=new Random();
 		super.setCompleteTime(random.nextInt(10)+10);
 	}

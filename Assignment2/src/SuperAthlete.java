@@ -16,17 +16,17 @@ public class SuperAthlete extends Althlete {
 		this.gameType = gameType;
 	}
 	
-	public void complete()
+	public void complete(String type)
 	{
-		if(this.gameType == "Swimming"){
+		if(type == "Swim"){
 			Random random=new Random();
 			super.setCompleteTime(random.nextInt(100)+100);
 			
-		}else if(this.gameType == "Cycling"){
+		}else if(type == "Cycle"){
 			Random random=new Random();
 			super.setCompleteTime(random.nextInt(300)+500);
 			
-		}else if(this.gameType == "Running"){
+		}else if(type == "Run"){
 			Random random=new Random();
 			super.setCompleteTime(random.nextInt(10)+10);
 			
@@ -41,6 +41,11 @@ public class SuperAthlete extends Althlete {
 	public void setType(String type)
 	{
 		this.gameType=type;
+	}
+	@Override
+	public void complete() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
