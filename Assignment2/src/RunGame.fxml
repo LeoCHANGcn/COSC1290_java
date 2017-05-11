@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runGameGUI">
+   <children>
+      <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label text="Input Game ID">
+               <VBox.margin>
+                  <Insets bottom="1.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="gameIDInput" promptText="eg. S01(S|R|C with digits)">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Select Game type">
+               <VBox.margin>
+                  <Insets bottom="1.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="selectGame" prefWidth="150.0" promptText="swim" visibleRowCount="3" />
+            <Label text="Assign an Officer">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER_LEFT" prefHeight="280.0" prefWidth="100.0">
+               <children>
+                  <RadioButton fx:id="o1" mnemonicParsing="false" text="Dave">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="officer" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton id="o2" fx:id="o2" mnemonicParsing="false" text="David" toggleGroup="$officer">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="o3" mnemonicParsing="false" text="Marry" toggleGroup="$officer">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="o4" mnemonicParsing="false" text="Berk" toggleGroup="$officer">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="o5" mnemonicParsing="false" text="Hannan" toggleGroup="$officer">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="o6" mnemonicParsing="false" text="Tom" toggleGroup="$officer">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="o7" mnemonicParsing="false" text="Tommy" toggleGroup="$officer">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="o8" mnemonicParsing="false" text="Hommy" toggleGroup="$officer">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </RadioButton>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="400.0" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="360.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseReleased="#updateNum" prefHeight="367.0" prefWidth="400.0" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="tCheck" prefWidth="61.0" text="Check" />
+                      <TableColumn fx:id="tID" prefWidth="43.0" text="ID" />
+                        <TableColumn fx:id="tName" prefWidth="61.0" text="Name" />
+                        <TableColumn fx:id="tAge" prefWidth="51.0" text="Age" />
+                        <TableColumn fx:id="tType" minWidth="0.0" prefWidth="101.0" text="Type" />
+                        <TableColumn fx:id="tState" prefWidth="91.0" text="State" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#backToMainWindow" prefHeight="25.0" prefWidth="58.0" text="Back">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label prefHeight="15.0" prefWidth="160.0" text="Current num of Ath" />
+                  <TextField fx:id="numOfAthShow" prefHeight="25.0" prefWidth="86.0">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin></TextField>
+                  <Button fx:id="run" mnemonicParsing="false" onAction="#runSelectedGame" prefHeight="26.0" prefWidth="51.0" text="Run">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
