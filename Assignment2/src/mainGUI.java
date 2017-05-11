@@ -145,6 +145,7 @@ public class mainGUI implements Initializable{
 		signal=!signal;
 		System.out.println(signal);
 	}
+	
 	@FXML
 	public void about()
 	{
